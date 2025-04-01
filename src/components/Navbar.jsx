@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery, Box } from '@mui/material';
+import { AppBar, Toolbar, Button, IconButton, Drawer, List, ListItem, ListItemText, useTheme, useMediaQuery, Box } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 
@@ -49,14 +49,20 @@ const Navbar = () => {
     >
       <AppBar position="fixed" sx={{ background: 'rgba(255, 255, 255, 0.9)', backdropFilter: 'blur(5px)', boxShadow: '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)' }}>
         <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, fontWeight: 700, cursor: 'pointer', color: theme.palette.text.primary }}
+          <Box
+            sx={{ 
+              flexGrow: 1, 
+              cursor: 'pointer', 
+              display: 'flex', 
+              alignItems: 'center',
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              color: theme.palette.text.primary
+            }}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             Sairaj Y V
-          </Typography>
+          </Box>
 
           {isMobile ? (
             <IconButton
