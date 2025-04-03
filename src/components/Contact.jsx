@@ -19,9 +19,10 @@ const Contact = () => {
       link: 'https://www.linkedin.com/in/sairaj-y-v-a4b105174'
     },
     {
-      icon: <FaMapMarkerAlt />,
-      label: 'Location',
-      value: 'Bengaluru, Karnataka, India'
+      icon: <FaGithub />,
+      label: 'GitHub',
+      value: 'github.com/thesairajyv',
+      link: 'https://github.com/thesairajyv'
     }
   ];
 
