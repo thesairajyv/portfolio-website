@@ -1,10 +1,36 @@
 import React from 'react';
 import { Box, Container, Typography, Grid, Paper, Chip, Link } from '@mui/material';
 import { motion } from 'framer-motion';
-import { FaMicrochip, FaCode, FaCar, FaDatabase } from 'react-icons/fa';
+import { FaMicrochip, FaCode, FaCar, FaDatabase, FaNetworkWired } from 'react-icons/fa';
 
 const Projects = () => {
   const projects = [
+    {
+      title: 'Smart Packet Analyzer',
+      duration: 'Python Tool',
+      icon: <FaNetworkWired />,
+      description: 'Python tool for analyzing PCAP files to identify network issues and traffic patterns. Designed for network administrators and developers to streamline network troubleshooting.',
+      technologies: [
+        'Python 3.8+',
+        'pyshark',
+        'scapy',
+        'Google Gemini LLM',
+        'Wireshark/tshark'
+      ],
+      highlights: [
+        'Multi-Protocol Support - Analyzes TCP, UDP, ICMP, DNS, and HTTP streams',
+        'Error Detection - Identifies retransmissions, connection issues, and protocol-specific problems',
+        'AI Integration - Uses Google Gemini LLM for intelligent traffic analysis and insights',
+        'Stream Organization - Groups packets by flow with detailed statistics and timing',
+        'Built with Python 3.8+ using pyshark for packet parsing, scapy for network analysis, and Google Generative AI for intelligent insights',
+        'Integrates with Wireshark/tshark for comprehensive PCAP processing and supports automated format detection with configurable timeouts',
+        'Time Savings - Automates hours of manual packet inspection into minutes of automated analysis',
+        'Improved Accuracy - AI-powered insights reduce human error in network diagnostics',
+        'Cost Reduction - Faster troubleshooting means less network downtime and reduced operational costs',
+        'Scalability - Handles large PCAP files efficiently, supporting enterprise-level network analysis'
+      ],
+      githubLink: 'https://github.com/thesairajyv/portfolio-website.git'
+    },
     {
       title: 'Wireless Electrical Vehicle Charging System',
       duration: 'Final Year Project',
@@ -146,6 +172,24 @@ const Projects = () => {
                         }}
                       >
                         View Project Certificate
+                      </Link>
+                    )}
+                    {project.githubLink && (
+                      <Link
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          display: 'inline-block',
+                          color: 'secondary.main',
+                          textDecoration: 'none',
+                          mb: 2,
+                          '&:hover': {
+                            textDecoration: 'underline'
+                          }
+                        }}
+                      >
+                        View on GitHub
                       </Link>
                     )}
                     <Box component="ul" sx={{ pl: 2, mb: 0 }}>
