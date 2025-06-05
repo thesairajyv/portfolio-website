@@ -88,7 +88,7 @@ const About = () => {
               <motion.div variants={itemVariants}>
                 <Typography variant="body1" paragraph>
                   As a Technical Solutions Engineer at Google, I specialize in cloud infrastructure
-                  and network engineering. With multiple Google Cloud certifications and extensive
+                  and network engineering with multiple Google Cloud certifications and extensive
                   hands-on experience, I excel in resolving complex technical challenges and
                   implementing efficient solutions.
                 </Typography>
