@@ -29,7 +29,7 @@ const Projects = () => {
         'Cost Reduction - Faster troubleshooting means less network downtime and reduced operational costs',
         'Scalability - Handles large PCAP files efficiently, supporting enterprise-level network analysis'
       ],
-      githubLink: 'https://github.com/thesairajyv/portfolio-website.git'
+      githubLink: 'https://github.com/thesairajyv/Smart-Network-packet-analyser.git'
     },
     {
       title: 'Wireless Electrical Vehicle Charging System',
